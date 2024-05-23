@@ -7,6 +7,7 @@ import {
 import './index.css';
 import App from './App';
 import ErrorPage from "./Routes/error-page"
+import Timeline from './Routes/timeline'
 
 const router = createBrowserRouter([
   {
@@ -14,12 +15,13 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      {
+      /*{
         path: "/",
         element: <Login />
       },
+      */
       {
-        path: "/timeline/:username",
+        path: "/Timeline",
         element: <Timeline />
       }
     ]
