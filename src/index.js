@@ -4,7 +4,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './index.css';
 import App from './App';
 import ErrorPage from "./Routes/error-page"
 import Timeline from './Routes/timeline'

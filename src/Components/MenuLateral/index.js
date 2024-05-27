@@ -1,26 +1,9 @@
-import { Box, Button, ButtonGroup, HStack, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, HStack, Text } from '@chakra-ui/react'
 import { Avatar } from '@chakra-ui/react'
 import { Divider } from '@chakra-ui/react'
 import { WiDayCloudy } from "react-icons/wi";
 import { WiSnow } from "react-icons/wi";
-import styled from "styled-components"
 
-const MenuContainer = styled.div`
-    width: 20%;
-    margin: 0 auto;
-    max-width: 20%;
-    height: 100vh;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-
-    Button {
-       width: 90%;
-       margin: 20% 10%;
-    }
-`
 
 const MenuLateral = () => {
     return (
@@ -29,6 +12,7 @@ const MenuLateral = () => {
             justifyContent='start'
             alignItems='center'
             flexDirection='column'
+            height='100vh'
         >
             <Box 
                 display='flex' 
@@ -51,20 +35,34 @@ const MenuLateral = () => {
                 flexDirection='column'
                 alignItems='center'
                 width='80%'
+            >
+                <Button 
+                    leftIcon={<WiDayCloudy/>} 
+                    isActive='true'
+                    mb='10px'
                 >
-                    <Button 
-                        leftIcon={<WiDayCloudy/>} 
-                        isActive='true'
-                        mb='10px'
-                    >
-                        Planejador Climático
-                    </Button>
-                    <Button 
-                        leftIcon={<WiSnow/>} 
-                    >
-                        Snow Hunter
-                    </Button>
-                </ButtonGroup>
+                    Planejador Climático
+                </Button>
+                <Button 
+                    leftIcon={<WiSnow/>} 
+                >
+                    Snow Hunter
+                </Button>
+            </ButtonGroup>
+            <Box
+                m='auto 0 0 0'
+                width='115%'
+                textAlign='center'
+                p='10px'
+                backgroundColor='gray'
+            >
+                <Text fontSize='12px' color='white'>
+                    Route Weather ©️ 2024
+                </Text>
+                <Text fontSize='12px' color='white'>
+                    Developed by Gabriel and Rary
+                </Text>
+            </Box>
         </Box>
     )
 }
