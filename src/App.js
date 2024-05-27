@@ -5,9 +5,6 @@ import { ChakraProvider, Grid, GridItem } from "@chakra-ui/react";
 
 
 function App() {
-  /*
-    função criar timeline para o username logado
-  */
 
 
   return (
@@ -29,16 +26,5 @@ function App() {
   );
 }
 
-/*
-  <MainContainer>
-    <EstilogsGlobais/>
-    <MenuLateral/>
-    <AppContainer>
-      <RequireAuth>
-        <Timeline/>
-      </RequireAuth>
-    </AppContainer>
-  </MainContainer>
-*/
 
 export default App;

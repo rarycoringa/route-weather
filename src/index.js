@@ -15,11 +15,6 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      /*{
-        path: "/",
-        element: <Login />
-      },
-      */
       {
         path: "/Timeline",
         element: <Timeline />
@@ -34,11 +29,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-/*
-  <React.StrictMode>
-    <AuthProvider>
-      <RouterProvider router={router} />
-    </AuthProvider> 
-  </React.StrictMode>
-*/
