@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import './index.css';
 import App from './App';
 import ErrorPage from "./Routes/error-page"
 import Timeline from './Routes/timeline'
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      /*{
+        path: "/",
+        element: <Login />
+      },
+      */
       {
         path: "/Timeline",
         element: <Timeline />
@@ -28,3 +34,11 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+/*
+  <React.StrictMode>
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider> 
+  </React.StrictMode>
+*/

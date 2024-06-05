@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, HStack, Text } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, HStack, Text, } from '@chakra-ui/react'
 import { Avatar } from '@chakra-ui/react'
 import { Divider } from '@chakra-ui/react'
 import { WiDayCloudy } from "react-icons/wi";
@@ -12,7 +12,6 @@ const MenuLateral = () => {
             justifyContent='start'
             alignItems='center'
             flexDirection='column'
-            height='100vh'
         >
             <Box 
                 display='flex' 
@@ -35,36 +34,34 @@ const MenuLateral = () => {
                 flexDirection='column'
                 alignItems='center'
                 width='80%'
-            >
-                <Button 
-                    leftIcon={<WiDayCloudy/>} 
-                    isActive='true'
-                    mb='10px'
                 >
-                    Planejador Climático
-                </Button>
-                <Button 
-                    leftIcon={<WiSnow/>} 
-                >
-                    Snow Hunter
-                </Button>
-            </ButtonGroup>
-            <Box
-                m='auto 0 0 0'
-                width='115%'
-                textAlign='center'
-                p='10px'
-                backgroundColor='gray'
-            >
-                <Text fontSize='12px' color='white'>
-                    Route Weather ©️ 2024
-                </Text>
-                <Text fontSize='12px' color='white'>
-                    Developed by Gabriel and Rary
-                </Text>
-            </Box>
+                    <Button 
+                        leftIcon={<WiDayCloudy/>} 
+                        isActive='true'
+                        mb='10px'
+                    >
+                        Planejador Climático
+                    </Button>
+                    <Button 
+                        leftIcon={<WiSnow/>} 
+                    >
+                        Snow Hunter
+                    </Button>
+                </ButtonGroup>
         </Box>
     )
 }
 
 export default MenuLateral
+
+/*
+    <MenuContainer>
+        <PerfilContainer>
+            <PerfilImg/>
+            <PerfilName> {name} </PerfilName> verificar localmente
+        </PerfilContainer>
+        <Linhaqueesquecionome>
+        <PlanejadorClimButtom/> buttom com navigate, detectar se já estiver na pagina para ficar "selecionado"
+        <SnowHunter/> buttom sem nada por enquanto
+    </MenuContainer>
+*/

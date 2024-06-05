@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import DayContainer from "../DayContainer";
 
 const Background = styled.div`
   background-color: #D0D0D0;
@@ -11,18 +12,33 @@ const TimelineContainer = styled.div`
   height: 100vh;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 function Timeline () {
+    /*
+    função criar <DayContainer>
+
+    */
   
 
   return (
     <Background>
       <TimelineContainer>
-
+        <DayContainer/>
       </TimelineContainer>
     </Background>
   );
 }
 
 export default Timeline
+
+/*
+    <TimelineContainer>
+        <DayContainer date={date}/> (0)
+        {...}
+        <DayContainer date={date}/> (n)
+    </TimelineContainer>
+*/
