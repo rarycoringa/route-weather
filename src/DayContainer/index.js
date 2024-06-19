@@ -1,6 +1,6 @@
 import { Box, Divider, Text } from "@chakra-ui/react"
 import CityCard from "./CityCard"
-import AddCardButton from "./AddCardButton"
+import MenuAddCard from "../Components/MenuAddCard"
 
 
 const DayContainer = () => {
@@ -21,7 +21,7 @@ const DayContainer = () => {
             </Text>
             <CityCard/>
             <Divider orientation="vertical" position={'sticky'} ml={'2rem'}/>
-            <AddCardButton/>
+            <MenuAddCard/>
         </Box>
     )
 }

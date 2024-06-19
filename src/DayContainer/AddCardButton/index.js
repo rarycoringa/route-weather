@@ -2,7 +2,7 @@ import { Box, Button, Divider, Image, Stack, Text, VStack } from "@chakra-ui/rea
 
 
 
-const AddCardButton = () => {
+const AddCardButton = ({onOpen}) => {
     return (
         <VStack mb={'2rem'}>
             <Stack direction='row'>
@@ -19,7 +19,7 @@ const AddCardButton = () => {
             borderRadius={'30px'}
             padding={'1.5rem'}
             >
-                <Button background={'none'} _hover={{ bg: 'none' }}>
+                <Button background={'none'} _hover={{ bg: 'none' }} onClick={onOpen}>
                     <Image src="/Icons/AddCard.svg" />
                 </Button>
             </Box>
